@@ -1,20 +1,85 @@
+@charset "UTF-8";
 @import "tailwindcss";
 
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+    --laranja: #FF6B00;
+    --amarelo: #FFC107;
+    --azul: #1E3A8A;
+    --cinza-claro: #F5F5F5;
+    --cinza-medio: #9E9E9E;
+    --preto: #000000;
 }
 
-body{
-  background-color: #228b22;
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-size: 100%;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* BOTÕES */
+
+.btn {
+  width: 185px;
+  height: 50px;
   color: #fff;
-  font-weight: 500;
-  font-family: 'Montserrat', sans-serif;
+  border-radius: 20px;
+  font-size: 1.2em;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--laranja);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+  transition: all .5s ease-out;
 }
 
-.sideBar{
-
+.btn:hover {
+  transform: scale(1.1);
+  color: #000;
+  background-color: var(--amarelo);
 }
+
+.btn-sec {
+  background-color: var(--azul);
+}
+
+/* INPUT */
+
+.input_user {
+  color: var(--preto);
+  font-weight: 600;
+  margin: 5px;
+  letter-spacing: 2px;
+  background-color: #fff;
+  border: 1px solid var(--cinza-medio);
+}
+
+.input_user:hover {
+  border: 1px solid var(--laranja);
+}
+
+.input_user:hover .fa-solid {
+  color: var(--laranja);
+}
+
+.input_user:hover .fa-regular {
+  color: var(--laranja);
+}
+
+/* SUBMIT */
 

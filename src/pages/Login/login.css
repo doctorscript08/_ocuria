@@ -1,0 +1,28 @@
+@import url('../../index.css');
+
+.conteiner {
+    min-width: 320px;
+    max-width: 600px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px var(--cinza-medio);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p > span {
+    color: var(--laranja);
+}
