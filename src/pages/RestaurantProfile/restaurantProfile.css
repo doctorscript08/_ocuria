@@ -64,3 +64,82 @@
 .corpo .content p {
     text-align: center;
 }
+
+.form fieldset {
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--laranja);
+}
+
+.form fieldset legend {
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: var(--laranja);
+}
+
+.redes-sociais {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-sociais ul li {
+    display: inline-block;
+    margin: 5px;
+    font-size: 2.5em;
+    transition: all .5s ease-out;
+}
+
+.redes-sociais ul li:hover {
+    transform: scale(1.2);
+}
+
+.redes-sociais .whatsapp:hover {
+    color: #1daa61;
+}
+
+.redes-sociais .instagram:hover {
+    color: #E1306C;
+}
+
+.redes-sociais .tiktok:hover {
+    color: #25F4EE;
+}
+
+.redes-sociais .linkedin:hover {
+    color: #0077B5;
+}
+
+.redes-sociais .youtube:hover {
+    color: #ff0000;
+}
+
+.redes-sociais .facebook:hover {
+    color: #1877F2;    
+}
+
+.localizacao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.map {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--cinza-medio);
+}

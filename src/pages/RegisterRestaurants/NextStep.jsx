@@ -1,8 +1,9 @@
 import Input from "../../components/Input.jsx"
 import Submit from "../../components/Submit.jsx"
+import TextArea from "../../components/TextArea.jsx"
 import "./resgisterRestaurants.css"
 
-function Cadastro_restaurantes_passo_2() {
+function NextStep() {
     return (
         <>
             <section className="conteiner bg-white text-center p-4">
@@ -17,7 +18,7 @@ function Cadastro_restaurantes_passo_2() {
                         <Input type={"text"} name={"slogan"} id={"slogan"} className="mt-0" />
                         <br />
                         <label htmlFor="biografia">Conte sobre o seu restaurante</label>
-                        <textarea name="biografia" id="biografia" rows={5}></textarea>
+                        <TextArea nome={"biografia"} id={"biografia"} rows={"5"} columns={0} placeholder={"Escreva aqui"}/>
                     </div>
 
                     <Submit value={"Finalizar"} name={"cadastrar"} id={"cadastrar"} />
@@ -27,4 +28,4 @@ function Cadastro_restaurantes_passo_2() {
     )
 }
 
-export default Cadastro_restaurantes_passo_2
+export default NextStep

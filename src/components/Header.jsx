@@ -18,7 +18,7 @@ function Header() {
                           <span><i className="fa-solid fa-user text-white w-12 text-center rounded-3xl"></i></span>
 
                           <section className="accoes">
-                              <div className="scale"><a href="/restaurant-profile" className="text-white font-extrabold uppercase">Perfil</a></div>
+                              <div className="scale"><a href="/client-profile" className="text-white font-extrabold uppercase">Perfil</a></div>
                               <div className="scale"><a href="/login" className="text-white font-extrabold uppercase">Entrar</a></div>
                               <div className="scale"><a href="/register-clients" className="text-white font-extrabold uppercase">Cadastrar</a></div>
                               <div className="scale"><a href="/register-restaurants" className="text-white font-extrabold uppercase">Cadastrar Restaurantes</a></div>

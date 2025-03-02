@@ -2,30 +2,30 @@
 @import "tailwindcss";
 
 :root {
-    --laranja: #FF6B00;
-    --amarelo: #FFC107;
-    --azul: #1E3A8A;
-    --cinza-claro: #F5F5F5;
-    --cinza-medio: #9E9E9E;
-    --preto: #000000;
+  --laranja: #FF6B00;
+  --amarelo: #FFC107;
+  --azul: #1E3A8A;
+  --cinza-claro: #F5F5F5;
+  --cinza-medio: #9E9E9E;
+  --preto: #000000;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    border: none;
-    font-size: 100%;
-    box-sizing: border-box;
-    outline: none;
-    font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-size: 100%;
+  box-sizing: border-box;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
-    text-align: justify;
+  text-align: justify;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* BOTÕES */
@@ -214,7 +214,7 @@ a {
   align-items: center;
 }
 
-p > span {
+p>span {
   color: var(--laranja);
 }
 
@@ -243,7 +243,7 @@ p > span {
   transform: scale(1.1);
 }
 
-.galeria div:hover .ofuscar{
+.galeria div:hover .ofuscar {
   backdrop-filter: blur(0px);
 }
 
@@ -289,4 +289,19 @@ p > span {
   height: 100%;
   border-radius: 20px;
   backdrop-filter: blur(2px);
+}
+
+/* TEXTAREA*/
+
+.msg {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  background-color: #fff;
+  border: 1px solid var(--cinza-medio);
+}
+
+.msg:hover {
+  border: 1px solid var(--laranja);
 }
