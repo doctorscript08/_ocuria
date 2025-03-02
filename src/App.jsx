@@ -1,16 +1,9 @@
 import React from 'react'
-import Index from './pages/Login/Index.jsx'
+import Routs from "./assets/routes/Routs.jsx"
 
 
 const App = () => {
-
-  return (
-    
-    <>
-      <Index/>
-    </>
-
-  )
+  return <Routs/>
 }
 
 export default App

@@ -1,0 +1,45 @@
+import Input from "../../components/Input.jsx"
+import Submit from "../../components/Submit.jsx"
+import "./registerClients.css"
+
+function RegisterClients() {
+    return (
+        <>
+            <main>
+                <section className="conteiner bg-white text-center p-4">
+                    <h1 className="text-black font-extrabold text-3xl uppercase">Criar Conta</h1>
+                    <p className="font-semibold">Já tem uma conta? <span><a href="/logar">Login</a></span></p>
+
+                    <form className="form">
+                        <Input type={"text"} name={"username"} id={"username"} placeholder={"Nome de usuário"} icone={"fa-regular fa-user"} />
+
+                        <Input type={"text"} name={"nome"} id={"nome"} placeholder={"Nome Completo"} icone={"fa-regular fa-id-badge"} />
+
+                        <div className="genero">
+                            <p className="text-xl">Género</p>      
+                            <section>
+                                <input type="radio" name="genero" id="masculino" /> &nbsp;
+                                <label htmlFor="masculino">Masculino</label> &nbsp;&nbsp;
+
+                                <input type="radio" name="genero" id="feminino" /> &nbsp;
+                                <label htmlFor="feminino">Feminino</label> 
+                            </section>
+                        </div>
+
+                        <Input type={"email"} name={"email"} id={"email"} placeholder={"Email"} icone={"fa-solid fa-envelope"} />
+
+                        <Input type={"text"} name={"telefone"} id={"telefone"} placeholder={"Nº de telefone"} icone={"fa-solid fa-phone"} />
+
+                        <Input type={"password"} name={"password"} id={"password"} placeholder={"Password"} icone={"fa-solid fa-lock"} />
+
+                        <Input type={"password"} name={"password_confirm"} id={"password_confirm"} placeholder={"Confirmar Password"} icone={"fa-solid fa-lock"} />
+
+                        <Submit value={"Cadastrar"} name={"cadastrar"} id={"cadastrar"}/>
+                    </form>
+                </section>
+            </main>
+        </>
+    )
+}
+
+export default RegisterClients

@@ -1,0 +1,10 @@
+@import url('../../index.css');
+
+.genero {
+  margin: 10px;
+  letter-spacing: 1px;
+}
+
+.genero p {
+  font-weight: 600;
+}
