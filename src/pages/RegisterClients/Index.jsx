@@ -1,5 +1,5 @@
-import Input from "../../components/Input.jsx"
-import Submit from "../../components/Submit.jsx"
+import Input from "../../components/Input/Input.jsx"
+import Submit from "../../components/Submit/Submit.jsx"
 import "./registerClients.css"
 
 function RegisterClients() {

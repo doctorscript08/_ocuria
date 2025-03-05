@@ -1,70 +1,70 @@
 @import url('../../index.css');
 
-.content {
+.content-cliente {
     width: 100%;
     height: 100vh;
     padding: 15px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 15px;
+    position: relative;
     background-color: var(--cinza-claro);
 }
 
-.foto-perfil {
-    width: 300px;
-    height: 300px;
+.foto-perfil-cliente {
+    width: 100px;
+    height: 100px;
+}
+
+.foto-perfil-cliente img {
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
-    position: relative;
     border: 3px solid var(--laranja);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     transition: all .5s ease-out;
 }
 
-.foto-perfil:hover {
-    border: 3px solid var(--amarelo);   
+.foto-perfil-cliente img:hover {
+    border: 3px solid var(--amarelo);
 }
 
-.foto-perfil:hover .mudar-foto {
-    background-color: var(--amarelo);
-}
-
-.foto-perfil .foto img {
-    width: 100%;
-    border-radius: 50%;
-}
-
-.foto-perfil .mudar-foto {
+.definicoes {
     position: absolute;
-    top: 85%;
-    left: 66%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    color: #fff;
-    border-radius: 50%;
-    background-color: var(--laranja);
-    transition: all .5s ease-out;
+    bottom: 1em;
+    right: 1.5em;
+    font-size: 1.5em;
+    color: var(--preto);
 }
 
-.foto-perfil .mudar-foto:hover {
-    transform: scale(1.2);
-    cursor: pointer;
+.data {
+    width: 320px;
+    padding: 15px;
+    font-size: 1.2em;
+    color: var(--preto);
+    font-weight: 600;
+    margin: 5px;
+    letter-spacing: 2px;
+    background-color: #fff;
+    border-radius: 40px;
+    border: 1px solid var(--cinza-medio);
 }
 
-.user-data {
-    width: 100%;
-    text-align: left;
-    margin-top: 30px;
+.texto {
+    width: 90%;
+    margin-left: 10px;
+    color: var(--cinza-medio);
 }
 
-.user-data div {
-    height: 50px;
-    border-bottom: 1px solid var(--laranja);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.data:hover {
+    border: 1px solid var(--laranja);
+}
+
+.data:hover .texto {
+    color: var(--laranja);
+}
+
+.data:hover .icone-perfil {
+    color: var(--laranja);
 }

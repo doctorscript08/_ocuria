@@ -1,4 +1,4 @@
-import Input from "../../components/Input.jsx"
+import Input from "../../components/Input/Input.jsx"
 import "./resgisterRestaurants.css"
 
 

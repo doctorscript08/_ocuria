@@ -1,27 +1,44 @@
-import Input from "../../components/Input.jsx"
-import Galeria from "../../components/Galeria.jsx"
-import TextArea from "../../components/TextArea.jsx"
-import Submit from "../../components/Submit.jsx"
+import Input from "../../components/Input/Input.jsx"
+import TextArea from "../../components/TextArea/TextArea.jsx"
+import Submit from "../../components/Submit/Submit.jsx"
 import "./restaurantProfile.css"
+
+const back = () => {
+    window.history.go(-1)
+}
 
 function RestaurantProfile() {
     return (
         <>
+            <div className="back-bar"><span className="cursor-pointer" onClick={back}><i className="fa-solid fa-arrow-left"></i></span></div>
             <header className="cabecalho-restaurante">
                 <div className="sobreposicao"></div>
-                <div className="foto-perfil">
+                <div className="foto-perfil-restaurante">
                     <img src="src/assets/images/foto-perfil.jpg" />
                 </div>
+                <span className="definicoes-restaurante"><a href="/definicoes-restaurante"><i className="fa-solid fa-gear"></i></a></span>
             </header>
             <main className="corpo">
-                <section className="content">
+                <section className="content-restaurante">
                     <h1 className="nome-restaurante">Nome</h1>
                     <p className="bio">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ducimus laborum, voluptatem perspiciatis cupiditate ipsam totam repellat inventore assumenda modi dignissimos beatae! Atque a repellendus laudantium neque eaque? Dolorem, odio!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ducimus laborum, voluptatem perspiciatis cupiditate ipsam totam repellat inventore assumenda modi dignissimos beatae! Atque a repellendus laudantium neque eaque? Dolorem, odio! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores unde magnam eveniet molestiae dolorem nesciunt repellendus assumenda, animi omnis. Non natus maiores quaerat velit minus maxime porro dolor ipsa iste. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat quos impedit aspernatur pariatur. Sapiente sed veniam, voluptas rem voluptates, eos a voluptate aspernatur ab alias, consequatur quae dolor delectus dicta?
                     </p>
-
-                    <Galeria/>
-
+                    <section className="galeria flex justify-center flex-wrap">
+                        <div className="foto-1"><span className="ofuscar"></span></div>
+                        <div className="foto-2"><span className="ofuscar"></span></div>
+                        <div className="foto-3"><span className="ofuscar"></span></div>
+                        <div className="foto-4"><span className="ofuscar"></span></div>
+                        <div className="foto-5"><span className="ofuscar"></span></div>
+                        <div className="foto-6"><span className="ofuscar"></span></div>
+                        <div className="foto-7"><span className="ofuscar"></span></div>
+                        <div className="foto-8"><span className="ofuscar"></span></div>
+                        <div className="foto-9"><span className="ofuscar"></span></div>
+                    </section>
+                    <div className="menus">
+                        <h2>Menus</h2>
+                        <section className="carrossel-menus">Aqui vão carrosseis com menus</section>
+                    </div>
                     <div className="contactos">
                         <h2>Contactos</h2>
                         <form className="form">
@@ -29,11 +46,10 @@ function RestaurantProfile() {
                                 <legend>Dê-nos um feedback</legend>
                                 <Input type={"text"} name={"nome"} id={"nome"} placeholder={"Nome completo"} icone={"fa-solid fa-user"} />
                                 <Input type={"email"} name={"email"} id={"email"} placeholder={"Email"} icone={"fa-solid fa-envelope"} />
-                                <TextArea nome={"mensagem"} id={"mensagem"} rows={"5"} columns={"37"} placeholder={"Escreva aqui a sua mensagem"}/>
-                                <Submit value={"Enviar"} name={"sendMsg"} id={"sendMsg"}/>
+                                <TextArea nome={"mensagem"} id={"mensagem"} rows={"5"} columns={"37"} placeholder={"Escreva aqui a sua mensagem"} />
+                                <Submit value={"Enviar"} name={"sendMsg"} id={"sendMsg"} />
                             </fieldset>
                         </form>
-
                         <div className="redes-sociais">
                             <ul>
                                 <li className="whatsapp"><a href="#"><i className="fa-brands fa-square-whatsapp"></i></a></li>
@@ -45,7 +61,6 @@ function RestaurantProfile() {
                             </ul>
                         </div>
                     </div>
-
                     <div className="localizacao">
                         <h2>Localização</h2>
                         <section className="map">Conectar com API de Geolocalização</section>

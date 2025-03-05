@@ -1,3 +1,5 @@
+import "./textArea.css"
+
 function TextArea({nome, id, placeholder, rows, columns}) {
     return (
         <>

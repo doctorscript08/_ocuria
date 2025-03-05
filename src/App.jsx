@@ -3,7 +3,11 @@ import Routs from "./assets/routes/Routs.jsx"
 
 
 const App = () => {
-  return <Routs/>
+  return (
+    <>
+      <Routs/>
+    </>
+  )
 }
 
 export default App

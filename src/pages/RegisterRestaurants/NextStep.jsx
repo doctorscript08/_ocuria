@@ -1,6 +1,6 @@
-import Input from "../../components/Input.jsx"
-import Submit from "../../components/Submit.jsx"
-import TextArea from "../../components/TextArea.jsx"
+import Input from "../../components/Input/Input.jsx"
+import Submit from "../../components/Submit/Submit.jsx"
+import TextArea from "../../components/TextArea/TextArea.jsx"
 import "./resgisterRestaurants.css"
 
 function NextStep() {

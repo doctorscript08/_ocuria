@@ -1,28 +1,52 @@
 import "./clientProfile.css"
 
+const back = () => {
+    window.history.go(-1)
+}
+
 function ClientProfile() {
     return (
         <>
-            <section className="content">
-                <div className="foto-perfil">
-                    <div className="foto"><img src="src/assets/images/foto-clientProfile.jpg" /></div>
-                    <div className="mudar-foto"><i className="fa-solid fa-pen"></i></div>
+            <div className="back-bar"><span className="cursor-pointer" onClick={back}><i className="fa-solid fa-arrow-left"></i></span></div>
+            <section className="content-cliente">
+                <div className="foto-perfil-cliente">
+                    <img src="src/assets/images/foto-clientProfile.jpg" />
                 </div>
 
-                <div className="user-data">
-                    <div className="nome">
-                        <span className="data">Nome do usuário</span>
-                        <span className="icone"><i className="fa-solid fa-pen"></i></span>
-                    </div>
-                    <div className="endereço">
-                        <span className="data">Localização</span>
-                        <span className="icone"><i className="fa-solid fa-pen"></i></span>
-                    </div>
-                    <div className="numero">
-                        <span className="data">Nº de Telefone</span>
-                        <span className="icone"><i className="fa-solid fa-pen"></i></span>
-                    </div>
+                <div className="data">
+                    <span className="icone-perfil">
+                        <i className="fa-regular fa-user"></i>
+                    </span>
+                    <span className="texto">
+                        Nome do usuário
+                    </span>
                 </div>
+                <div className="data">
+                    <span className="icone-perfil">
+                        <i className="fa-regular fa-id-badge"></i>
+                    </span>
+                    <span className="texto">
+                        Nome completo
+                    </span>
+                </div>
+                <div className="data">
+                    <span className="icone-perfil">
+                        <i className="fa-solid fa-envelope"></i>
+                    </span>
+                    <span className="texto">
+                        Email
+                    </span>
+                </div>
+                <div className="data">
+                    <span className="icone-perfil">
+                        <i className="fa-solid fa-phone"></i>
+                    </span>
+                    <span className="texto">
+                        Nº de telefone
+                    </span>
+                </div>
+
+                <span className="definicoes"><a href="/definicoes-cliente"><i className="fa-solid fa-gear"></i></a></span>
             </section>
         </>
     )
