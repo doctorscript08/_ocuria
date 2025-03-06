@@ -1,0 +1,50 @@
+@import url('../../index.css');
+
+.box-slide {
+    width: 100%;
+    position: relative; 
+}
+
+.swiper {
+    width: 50%;
+    position: relative;
+}
+
+.slide img {
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
+}
+
+.slide-btn {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    z-index: 20;
+    color: #fff;
+    font-size: 1.5em;
+    background-color: var(--amarelo);
+    border-radius: 50%;
+}
+
+.prevRef {
+    left: 10px;
+}
+
+.nextRef {
+    right: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .slide-btn {
+        display: none;
+    }   
+}
+
+@media screen and (max-width: 840px) {
+    .swiper {
+        width: 80%;
+    }
+}

@@ -5,10 +5,11 @@ import "./home.css"
 function Home() {
     return (
         <>
-            <Header />
-            <div className="min-h-screen flex items-center justify-center bg-gray-100">
-                <Swiper/>
-            </div>
+            <main className="principal">
+                <Header />
+                <h2>Os mais famosos</h2>
+                <Swiper />
+            </main>
         </>
     )
 }

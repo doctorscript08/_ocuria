@@ -1,42 +1,66 @@
-// components/Slider.jsx
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { useRef } from 'react';
+import 'swiper/css';
+import './slider.css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/effect-coverflow'
 
-const Slider = () => {
+export default () => {
+  const prevRef = useRef(null)
+  const nextRef = useRef(null)
+
   return (
-    <div className="w-full max-w-4xl mx-auto mt-8">
+    <div className="box-slide">
+      <button ref={prevRef} className='slide-btn prevRef'>
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+
+
       <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={20}
-        slidesPerView={1}
-        navigation
-        pagination={{ clickable: true }}
-        autoplay={{ delay: 3000 }}
-        breakpoints={{
-          640: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
+        effect='coverflow'
+        coverflowEffect={{
+          depth: 200,
+          modifier: 1,
+          rotate: 30,
+          scale: 1,
+          slideShadows: false,
+          stretch: 0
         }}
-        className="rounded-lg overflow-hidden shadow-lg"
+        breakpoints={{
+          640: {slidesPerView: 1},
+          768: {slidesPerView: 2},
+          1024: {slidesPerView: 3}
+        }}
+        navigation={{
+          prevEl: '.prevRef',
+          nextEl: '.nextRef'
+        }}
+        centerInsufficientSlides={true}
+        slidesPerView={"auto"}
+        grabCursor={true}
+        initialSlide={5}
+        autoplay={{ delay: 2000 }}
+        modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
+        onSlideChange={() => console.log('slide change')}
+        onSwiper={(swiper) => console.log(swiper)}
+        className='swiper'
       >
-        <SwiperSlide>
-          <img src="src/assets/images/galeria-1.jpg" alt="Slide 1" className="w-full h-64 object-cover" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="src/assets/images/galeria-2.jpg" alt="Slide 2" className="w-full h-64 object-cover" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="src/assets/images/galeria-3.jpg" alt="Slide 3" className="w-full h-64 object-cover" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="src/assets/images/galeria-4.jpg" alt="Slide 4" className="w-full h-64 object-cover" />
-        </SwiperSlide>
+        <SwiperSlide className='slide'><img src="src/assets/images/galeria-1.jpg" /></SwiperSlide>
+        <SwiperSlide className='slide'><img src="src/assets/images/galeria-2.jpg" /></SwiperSlide>
+        <SwiperSlide className='slide'><img src="src/assets/images/galeria-3.jpg" /></SwiperSlide>
+        <SwiperSlide className='slide'><img src="src/assets/images/galeria-4.jpg" /></SwiperSlide>
+        <SwiperSlide className='slide'><img src="src/assets/images/galeria-5.jpg" /></SwiperSlide>
+        <SwiperSlide className='slide'><img src="src/assets/images/galeria-6.jpg" /></SwiperSlide>
+        <SwiperSlide className='slide'><img src="src/assets/images/galeria-7.jpg" /></SwiperSlide>
+        <SwiperSlide className='slide'><img src="src/assets/images/galeria-8.jpg" /></SwiperSlide>
+        <SwiperSlide className='slide'><img src="src/assets/images/galeria-9.jpg" /></SwiperSlide>
       </Swiper>
+
+      <button ref={nextRef} className='slide-btn nextRef'>
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
     </div>
   );
 };
-
-export default Slider;
