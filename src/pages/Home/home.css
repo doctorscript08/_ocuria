@@ -2,4 +2,15 @@
 
 .principal {
     width: 100%;
+    /*background-image: linear-gradient(to right, var(--laranja), var(--amarelo), var(--azul));*/
+    background-image: url('../../assets/images/fundo-principal.jpg');
+}
+
+.principal h2 {
+    font-family: var(--font-subtitulos);
+}
+
+.slider-restaurantes {
+    width: 100%;
+    padding: 20px;
 }

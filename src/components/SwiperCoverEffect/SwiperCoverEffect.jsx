@@ -2,7 +2,7 @@ import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper/module
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useRef } from 'react';
 import 'swiper/css';
-import './slider.css'
+import './coverEffect.css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/effect-coverflow'
@@ -29,15 +29,15 @@ export default () => {
           stretch: 0
         }}
         breakpoints={{
-          640: {slidesPerView: 1},
-          768: {slidesPerView: 2},
-          1024: {slidesPerView: 3}
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 }
         }}
         navigation={{
           prevEl: '.prevRef',
           nextEl: '.nextRef'
         }}
-        centerInsufficientSlides={true}
+        pagination={{ clickable: true }}
         slidesPerView={"auto"}
         grabCursor={true}
         initialSlide={5}

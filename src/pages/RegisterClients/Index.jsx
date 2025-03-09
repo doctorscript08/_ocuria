@@ -13,8 +13,6 @@ function RegisterClients() {
                     <form className="form">
                         <Input type={"text"} name={"username"} id={"username"} placeholder={"Nome de usuário"} icone={"fa-regular fa-user"} />
 
-                        <Input type={"text"} name={"nome"} id={"nome"} placeholder={"Nome Completo"} icone={"fa-regular fa-id-badge"} />
-
                         <div className="genero">
                             <p className="text-xl">Género</p>      
                             <section>

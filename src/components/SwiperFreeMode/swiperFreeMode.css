@@ -1,0 +1,20 @@
+@import url('../../index.css');
+
+.box-slide {
+    width: 100%;
+    position: relative;
+}
+
+.swiper-free {
+    width: 80%;
+}
+
+.free-slide img {
+    width: 350px;
+    justify-items: 350px;
+    border-radius: 20px;
+}
+
+.right {
+    position: absolute;
+}

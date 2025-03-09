@@ -11,7 +11,7 @@ function Header() {
                 <section className="sup-bar">
                     <div className="logo rounded-xl p-1 z-20">
                         {/*<img src="" alt="logo-ocuria"/>*/}
-                        <h1 className="font-bold text-white uppercase"><a href="/">Ocuria</a></h1>
+                        <h1><a href="/">Ocuria</a></h1>
                     </div>
                     <button className="show-menu btn-menu bg-transparent z-20" onClick={() => setIsOpen(!isOpen)}>
                         <span className="icone"><i className="fa-solid fa-bars-staggered"></i></span>
@@ -49,7 +49,7 @@ function Header() {
 
                     <div className="search-bar-mobile bg-white rounded-3xl flex justify-between items-center">
                         <input type="search" name="search" id="search" className="w-4/5 font-semibold tracking-wide" />
-                        <span><i className="fa-solid fa-magnifying-glass text-2xl cursor-pointer text-black"></i></span>
+                        <span><i className="fa-solid fa-magnifying-glass text-2xl cursor-pointer"></i></span>
                     </div>
                 </section>
             </nav>

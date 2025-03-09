@@ -32,18 +32,10 @@
     justify-content: space-between;
 }
 
-.logo {
+.logo h1 a {
+    font: normal 1em var(--font-titulos);
+    color: #fff;
     cursor: pointer;
-    border-radius: 20px;
-    padding: 0 10px 5px 10px;
-    border: 2px solid var(--laranja);
-    backdrop-filter: blur(1px);
-    transition: all .5s ease-in;
-}
-
-.logo:hover {
-    border: 2px solid var(--amarelo);
-    backdrop-filter: blur(2px);
 }
 
 .btn-menu {
@@ -51,7 +43,9 @@
 }
 
 .cabecalho h1 {
-    font-size: 1.5em;
+    font-family: var(--font-titulos);
+    font-size: 2.5em;
+    letter-spacing: 2px;
     margin-top: 10px;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
 }
@@ -95,6 +89,7 @@
 }
 
 .scale {
+    font-family: var(--font-texto);
     font-size: 0.9em;
     margin: 15px;
     letter-spacing: 2px;

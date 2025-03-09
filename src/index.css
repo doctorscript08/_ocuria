@@ -1,5 +1,8 @@
 @charset "UTF-8";
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
   --laranja: #FF6B00;
@@ -8,6 +11,11 @@
   --cinza-claro: #F5F5F5;
   --cinza-medio: #9E9E9E;
   --preto: #000000;
+
+  --font-titulos: 'Pacifico', cursive;
+  --font-subtitulos: 'Poppins', sans-serif;
+  --font-texto: 'Nunito', sans-serif;
+  --font-special: 'Caveat', cursive;
 }
 
 /* GERAL */
@@ -19,7 +27,7 @@
   font-size: 100%;
   box-sizing: border-box;
   outline: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font: 700 1em var(--font-texto);
 }
 
 p {
@@ -37,8 +45,7 @@ a {
   height: 50px;
   color: #fff;
   border-radius: 20px;
-  font-size: 1.2em;
-  font-weight: 800;
+  font: 700 1.2em var(--font-special);
   text-transform: uppercase;
   margin-top: 15px;
   cursor: pointer;
