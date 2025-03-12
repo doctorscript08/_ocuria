@@ -47,15 +47,78 @@ export default () => {
         onSwiper={(swiper) => console.log(swiper)}
         className='swiper'
       >
-        <SwiperSlide className='slide'><img src="src/assets/images/galeria-1.jpg" /></SwiperSlide>
-        <SwiperSlide className='slide'><img src="src/assets/images/galeria-2.jpg" /></SwiperSlide>
-        <SwiperSlide className='slide'><img src="src/assets/images/galeria-3.jpg" /></SwiperSlide>
-        <SwiperSlide className='slide'><img src="src/assets/images/galeria-4.jpg" /></SwiperSlide>
-        <SwiperSlide className='slide'><img src="src/assets/images/galeria-5.jpg" /></SwiperSlide>
-        <SwiperSlide className='slide'><img src="src/assets/images/galeria-6.jpg" /></SwiperSlide>
-        <SwiperSlide className='slide'><img src="src/assets/images/galeria-7.jpg" /></SwiperSlide>
-        <SwiperSlide className='slide'><img src="src/assets/images/galeria-8.jpg" /></SwiperSlide>
-        <SwiperSlide className='slide'><img src="src/assets/images/galeria-9.jpg" /></SwiperSlide>
+        <SwiperSlide className='slide'>
+          <img src="src/assets/images/galeria-1.jpg" />
+          <div className="descricao">
+            <p>
+              Nome
+            </p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className='slide'>
+          <img src="src/assets/images/galeria-2.jpg" />
+          <div className="descricao">
+            <p>
+              Nome
+            </p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className='slide'>
+          <img src="src/assets/images/galeria-3.jpg" />
+          <div className="descricao">
+            <p>
+              Nome
+            </p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className='slide'>
+          <img src="src/assets/images/galeria-4.jpg" />
+          <div className="descricao">
+            <p>
+              Nome
+            </p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className='slide'>
+          <img src="src/assets/images/galeria-5.jpg" />
+          <div className="descricao">
+            <p>
+              Nome
+            </p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className='slide'>
+          <img src="src/assets/images/galeria-6.jpg" />
+          <div className="descricao">
+            <p>
+              Nome
+            </p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className='slide'>
+          <img src="src/assets/images/galeria-7.jpg" />
+          <div className="descricao">
+            <p>
+              Nome
+            </p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className='slide'>
+          <img src="src/assets/images/galeria-8.jpg" />
+          <div className="descricao">
+            <p>
+              Nome
+            </p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className='slide'>
+          <img src="src/assets/images/galeria-9.jpg" />
+          <div className="descricao">
+            <p>
+              Nome
+            </p>
+          </div>
+        </SwiperSlide>
       </Swiper>
 
       <button ref={nextRef} className='slide-btn nextRef'>

@@ -6,27 +6,32 @@ import "./home.css"
 function Home() {
     return (
         <>
+            <Header />
             <main className="principal">
-                <Header />
 
                 <h2>Os mais famosos</h2>
 
                 <CoverEffect />
 
                 <section className="slider-restaurantes">
-                    <SwiperFreeMode/>
+                    <h2>Gourmet</h2>
+                    <SwiperFreeMode />
                 </section>
                 <section className="slider-restaurantes">
-                    <SwiperFreeMode/>
+                    <h2>Casuais</h2>
+                    <SwiperFreeMode />
                 </section>
                 <section className="slider-restaurantes">
-                    <SwiperFreeMode/>
+                    <h2>Temáticos</h2>
+                    <SwiperFreeMode />
                 </section>
                 <section className="slider-restaurantes">
-                    <SwiperFreeMode/>
+                    <h2>Fast Food</h2>
+                    <SwiperFreeMode />
                 </section>
                 <section className="slider-restaurantes">
-                    <SwiperFreeMode/>
+                    <h2>Étnicos</h2>
+                    <SwiperFreeMode />
                 </section>
             </main>
         </>

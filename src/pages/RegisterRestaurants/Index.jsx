@@ -7,7 +7,7 @@ function ResgisterRestaurants() {
         <>
             <section className="conteiner bg-white text-center p-4">
                 <h1 className="text-black font-extrabold text-3xl uppercase">Cadastrar Restaurante</h1>
-                <p className="font-semibold">Já tem um? <span><a href="/logar">Login</a></span></p>
+                <p className="font-semibold">Já tem um? <span><a href="/login">Login</a></span></p>
 
                 <form className="form">
                     <Input type={"text"} name={"nome_restaurante"} id={"nome_restaurante"} placeholder={"Nome do restaurante"} icone={"fa-solid fa-utensils"} />
