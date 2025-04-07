@@ -1,0 +1,14 @@
+@import url('../../index.css');
+
+.msg {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    background-color: #fff;
+    border: 1px solid var(--cinza-medio);
+}
+
+.msg:hover {
+    border: 1px solid var(--laranja);
+}

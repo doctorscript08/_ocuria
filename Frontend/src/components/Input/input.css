@@ -1,0 +1,27 @@
+@import url('../../index.css');
+
+.input-user {
+    width: 320px;
+    color: var(--preto);
+    font-weight: 600;
+    margin: 5px;
+    letter-spacing: 2px;
+    background-color: #fff;
+    border: 1px solid var(--cinza-medio);
+}
+
+.input-user .input {
+    width: 90%;
+}
+
+.input-user:hover {
+    border: 1px solid var(--laranja);
+}
+
+.input-user:hover .fa-solid {
+    color: var(--laranja);
+}
+
+.input-user:hover .fa-regular {
+    color: var(--laranja);
+}
