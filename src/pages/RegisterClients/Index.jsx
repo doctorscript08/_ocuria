@@ -5,16 +5,16 @@ import "./registerClients.css"
 function RegisterClients() {
     return (
         <>
-            <main>
-                <section className="conteiner bg-white text-center p-4">
+            <main className="body">
+                <section className="conteiner bg-white text-center">
                     <h1 className="text-black font-extrabold text-3xl uppercase">Criar Conta</h1>
-                    <p className="font-semibold">Já tem uma conta? <span><a href="/logar">Login</a></span></p>
+                    <p className="font-semibold">Já tem uma conta? <span><a href="/login">Login</a></span></p>
 
                     <form className="form">
                         <Input type={"text"} name={"username"} id={"username"} placeholder={"Nome de usuário"} icone={"fa-regular fa-user"} />
 
                         <div className="genero">
-                            <p className="text-xl">Género</p>      
+                            <p className="text-xl genero-text">Género</p>      
                             <section>
                                 <input type="radio" name="genero" id="masculino" /> &nbsp;
                                 <label htmlFor="masculino">Masculino</label> &nbsp;&nbsp;

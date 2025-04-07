@@ -1,4 +1,5 @@
 import Header from "../../components/Header/Header.jsx"
+import Footer from "../../components/Footer/Footer.jsx"
 import CoverEffect from "../../components/SwiperCoverEffect/SwiperCoverEffect.jsx"
 import SwiperFreeMode from "../../components/SwiperFreeMode/SwiperFreeMode.jsx"
 import "./home.css"
@@ -34,6 +35,8 @@ function Home() {
                     <SwiperFreeMode />
                 </section>
             </main>
+
+            <Footer />
         </>
     )
 }

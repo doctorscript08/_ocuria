@@ -42,7 +42,6 @@ function Header() {
                                     <a href="/register-restaurants" className="text-white font-extrabold uppercase block">Restaurante</a>
                                 </div>
                             </div>
-                            <div className="scale"><a href="/definicoes" className="text-white font-extrabold uppercase">Definições</a></div>
                         </section>
                     </nav>
                 </section>
@@ -60,7 +59,6 @@ function Header() {
                         <span className="icone"><i className="fa-solid fa-xmark"></i></span>
                     </button>
                     <div className="scale"><a href="/" className="text-white font-extrabold uppercase">Home</a></div>
-                    <div className="scale"><a href="/client-profile" className="text-white font-extrabold uppercase">Perfil</a></div>
                     <div className="scale"><a href="/login" className="text-white font-extrabold uppercase">Entrar</a></div>
                     <div className="scale dropdown">
                         <span className="text-white font-extrabold uppercase cursor-pointer" onClick={() => setIsDropdownOpen(!isDropdownOpen)}>Cadastrar</span>
@@ -69,7 +67,6 @@ function Header() {
                             <a href="/register-restaurants" className="text-white font-extrabold uppercase block">Restaurante</a>
                         </div>
                     </div>
-                    <div className="scale"><a href="/definicoes" className="text-white font-extrabold uppercase">Definições</a></div>
 
                     <div className="search-bar-mobile bg-white rounded-3xl flex justify-between items-center">
                         <input type="search" name="search" id="search" className="w-4/5 font-semibold tracking-wide" />
