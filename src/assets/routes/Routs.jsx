@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "../../pages/Home/Index.jsx"
 import Login from "../../pages/Login/Index.jsx"
-import RegisterClients from "../../pages/RegisterClients/Index.jsx";
-import ResgisterRestaurants from "../../pages/RegisterRestaurants/Index.jsx";
-import NextStep from "../../pages/RegisterRestaurants/NextStep.jsx";
-import RestaurantProfile from "../../pages/RestaurantProfile/Index.jsx";
-import ClientProfile from "../../pages/ClientProfile/Index.jsx";
+import RegisterClients from "../../pages/Client/Register/Index.jsx";
+import ResgisterRestaurants from "../../pages/Restaurants/Register/Index.jsx";
+import NextStep from "../../pages/Restaurants/Register/NextStep.jsx";
+import RestaurantProfile from "../../pages/Restaurants/Profile/Index.jsx";
+import ClientProfile from "../../pages/Client/Profile/Index.jsx";
 
 function Routs() {
     return(

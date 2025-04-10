@@ -53,7 +53,7 @@ function Header() {
 
                 <h1 className="uppercase text-white font-extrabold z-20">Tu és o que comes</h1>
             </header>
-            <nav className={`nav-bar-mobile w-full text-center p-2 list-none z-20 ${isOpen ? "open" : ""}`}>
+            <nav className={`nav-bar-mobile w-full text-center p-2 list-none z-50 ${isOpen ? "open" : ""}`}>
                 <section className="nav-bar-mobile__conteiner">
                     <button className="close-menu btn-menu bg-transparent" onClick={() => setIsOpen(!isOpen)}>
                         <span className="icone"><i className="fa-solid fa-xmark"></i></span>
