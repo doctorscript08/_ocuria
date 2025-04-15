@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.card {
+    width: 250px;
+    height: 350px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 18px;
+    background-color: var(--cinza-claro);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 18px 18px 0 0;
+}
+
+.descricao {
+    text-align: center;
+}

@@ -2,9 +2,9 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { FreeMode, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/free-mode";
-import "./swiperFreeMode.css"
+import "./restaurantsCategories.css"
 
-export default () => {
+export default ({foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9}) => {
   return (
     <div className="box-slide">
       <Swiper
@@ -36,15 +36,15 @@ export default () => {
         onSwiper={(swiper) => console.log(swiper)}
         className='swiper-free'
       >
-        <SwiperSlide className='free-slide right'><img src="src/assets/images/galeria-1.jpg" /></SwiperSlide>
-        <SwiperSlide className='free-slide'><img src="src/assets/images/galeria-2.jpg" /></SwiperSlide>
-        <SwiperSlide className='free-slide'><img src="src/assets/images/galeria-3.jpg" /></SwiperSlide>
-        <SwiperSlide className='free-slide'><img src="src/assets/images/galeria-4.jpg" /></SwiperSlide>
-        <SwiperSlide className='free-slide'><img src="src/assets/images/galeria-5.jpg" /></SwiperSlide>
-        <SwiperSlide className='free-slide'><img src="src/assets/images/galeria-6.jpg" /></SwiperSlide>
-        <SwiperSlide className='free-slide'><img src="src/assets/images/galeria-7.jpg" /></SwiperSlide>
-        <SwiperSlide className='free-slide'><img src="src/assets/images/galeria-8.jpg" /></SwiperSlide>
-        <SwiperSlide className='free-slide'><img src="src/assets/images/galeria-9.jpg" /></SwiperSlide>
+        <SwiperSlide className='free-slide'><img src={foto1} /></SwiperSlide>
+        <SwiperSlide className='free-slide'><img src={foto2} /></SwiperSlide>
+        <SwiperSlide className='free-slide'><img src={foto3} /></SwiperSlide>
+        <SwiperSlide className='free-slide'><img src={foto4} /></SwiperSlide>
+        <SwiperSlide className='free-slide'><img src={foto5} /></SwiperSlide>
+        <SwiperSlide className='free-slide'><img src={foto6} /></SwiperSlide>
+        <SwiperSlide className='free-slide'><img src={foto7} /></SwiperSlide>
+        <SwiperSlide className='free-slide'><img src={foto8} /></SwiperSlide>
+        <SwiperSlide className='free-slide'><img src={foto9} /></SwiperSlide>
       </Swiper>
     </div>
   );

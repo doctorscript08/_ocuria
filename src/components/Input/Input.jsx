@@ -1,6 +1,6 @@
 import "./input.css"
 
-function Input({type, name, id, placeholder, icone}) {
+const Input = ({type, name, id, placeholder, icone}) => {
     return (
         <>
             <div className="input-user flex h-14 mt-4 rounded-full pl-2">

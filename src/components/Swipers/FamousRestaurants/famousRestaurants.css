@@ -1,5 +1,3 @@
-@import url('../../index.css');
-
 .box-slide {
     width: 100%;
     position: relative; 
@@ -48,28 +46,6 @@
 
 .nextRef {
     right: 10px;
-}
-
-.descricao {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    position: absolute;
-    top: 150%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, .5);
-    backdrop-filter: blur(2px);
-    transition: all .5s ease-out;
-}
-
-.slide:hover .descricao {
-    top: 50%;
 }
 
 @media screen and (max-width: 800px) {

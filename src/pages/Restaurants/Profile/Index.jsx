@@ -1,72 +1,60 @@
 import Input from "../../../components/Input/Input.jsx"
 import TextArea from "../../../components/TextArea/TextArea.jsx"
 import Submit from "../../../components/Submit/Submit.jsx"
+import Footer from "../../../components/Footer/Footer.jsx"
+import MenuCard from "../../../components/Swipers/MenuCards/MenuCard.jsx"
+import Testemonials from "../../../components/Swipers/Testemonials/Testemonials.jsx"
 import "./restaurantProfile.css"
+import "../../../index.css"
 
-const back = () => {
-    window.history.go(-1)
-}
-
-function RestaurantProfile() {
+const RestaurantProfile = () => {
     return (
         <>
-            <div className="back-bar"><span className="cursor-pointer" onClick={back}><i className="fa-solid fa-arrow-left"></i></span></div>
-            <header className="cabecalho-restaurante">
-                <div className="sobreposicao"></div>
-                <div className="foto-perfil-restaurante">
-                    <img src="src/assets/images/foto-perfil.jpg" />
-                </div>
-                <span className="definicoes-restaurante"><a href="/definicoes-restaurante"><i className="fa-solid fa-gear"></i></a></span>
-            </header>
             <main className="corpo">
-                <section className="content-restaurante">
-                    <h1 className="nome-restaurante">Nome</h1>
-                    <p className="bio">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ducimus laborum, voluptatem perspiciatis cupiditate ipsam totam repellat inventore assumenda modi dignissimos beatae! Atque a repellendus laudantium neque eaque? Dolorem, odio! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores unde magnam eveniet molestiae dolorem nesciunt repellendus assumenda, animi omnis. Non natus maiores quaerat velit minus maxime porro dolor ipsa iste. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat quos impedit aspernatur pariatur. Sapiente sed veniam, voluptas rem voluptates, eos a voluptate aspernatur ab alias, consequatur quae dolor delectus dicta?
-                    </p>
-                    <section className="galeria flex justify-center flex-wrap">
-                        <div className="foto-1"><span className="ofuscar"></span></div>
-                        <div className="foto-2"><span className="ofuscar"></span></div>
-                        <div className="foto-3"><span className="ofuscar"></span></div>
-                        <div className="foto-4"><span className="ofuscar"></span></div>
-                        <div className="foto-5"><span className="ofuscar"></span></div>
-                        <div className="foto-6"><span className="ofuscar"></span></div>
-                        <div className="foto-7"><span className="ofuscar"></span></div>
-                        <div className="foto-8"><span className="ofuscar"></span></div>
-                        <div className="foto-9"><span className="ofuscar"></span></div>
-                    </section>
-                    <div className="menus">
-                        <h2>Menus</h2>
-                        <section className="carrossel-menus">Aqui vão carrosseis com menus</section>
+                <section className="cover-photo">
+                    <div className="sobrepor"></div>
+                </section>
+                <section className="identification">
+                    <div className="profile-photo">
+                        <img src="/src/assets/images/foto-perfil.jpg" alt="foto de perfil" />
                     </div>
-                    <div className="contactos">
-                        <h2>Contactos</h2>
-                        <form className="form">
-                            <fieldset>
-                                <legend>Dê-nos um feedback</legend>
-                                <Input type={"text"} name={"nome"} id={"nome"} placeholder={"Nome completo"} icone={"fa-solid fa-user"} />
-                                <Input type={"email"} name={"email"} id={"email"} placeholder={"Email"} icone={"fa-solid fa-envelope"} />
-                                <TextArea nome={"mensagem"} id={"mensagem"} rows={"5"} columns={"37"} placeholder={"Escreva aqui a sua mensagem"} />
-                                <Submit value={"Enviar"} name={"sendMsg"} id={"sendMsg"} />
-                            </fieldset>
-                        </form>
-                        <div className="redes-sociais">
-                            <ul>
-                                <li className="whatsapp"><a href="#"><i className="fa-brands fa-square-whatsapp"></i></a></li>
-                                <li className="instagram"><a href="#"><i className="fa-brands fa-square-instagram"></i></a></li>
-                                <li className="tiktok"><a href="#"><i className="fa-brands fa-tiktok"></i></a></li>
-                                <li className="linkedin"><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                                <li className="youtube"><a href="#"><i className="fa-brands fa-youtube"></i></a></li>
-                                <li className="facebook"><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
-                            </ul>
+                    <div className="details">
+                        <h2 className="nome">Restaurante</h2>
+                        <p className="description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, quae.
+                        </p>
+                        <div className="location-avaliation">
+                            <p className="localizacao">
+                                Huíla Lubango
+                            </p>
+                            <span className="classificacao">
+                                stars
+                            </span>
                         </div>
                     </div>
-                    <div className="localizacao">
-                        <h2>Localização</h2>
-                        <section className="map">Conectar com API de Geolocalização</section>
+                </section>
+                <section className="menus">
+                    <h2>Menus</h2>
+                    <MenuCard foto1={"/src/assets/images/galeria-1.jpg"}/>
+                </section>
+                <section className="testemonials">
+                    <h2>O que as pessoas dizem sobre nós?</h2>
+                    <Testemonials foto1={"/src/assets/images/galeria-1.jpg"}/>
+                </section>
+                <section className="location">
+                    <div className="maps">
+                        conectar com api de geolocalização
+                    </div>
+                </section>
+                <section className="social-media">
+                    <div className="redes">
+                        <span><a href=""><i className="fa-brands fa-whatsapp"></i></a></span>
+                        <span><a href=""><i className="fa-brands fa-instagram"></i></a></span>
+                        <span><a href=""><i className="fa-brands fa-tiktok"></i></a></span>
                     </div>
                 </section>
             </main>
+            <Footer/>
         </>
     )
 }
