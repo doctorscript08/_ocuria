@@ -90,6 +90,19 @@ h2 {
     padding: 15px;
 }
 
+.contact {
+    width: 100%;
+    padding: 15px;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.contact .msg {
+    width: 100%;
+}
+
 .social-media {
     width: 100%;
     padding: 15px;

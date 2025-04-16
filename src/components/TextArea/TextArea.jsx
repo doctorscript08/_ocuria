@@ -1,9 +1,9 @@
 import "./textArea.css"
 
-function TextArea({nome, id, placeholder, rows, columns}) {
+function TextArea({name, id, placeholder,}) {
     return (
         <>
-            <textarea name={nome} id={id}  placeholder={placeholder} cols={columns} rows={rows} className="msg"></textarea>
+            <textarea name={name} id={id}  placeholder={placeholder} className="msg"></textarea>
         </>
     )
 }

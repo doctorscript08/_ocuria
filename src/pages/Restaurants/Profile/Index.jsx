@@ -46,6 +46,18 @@ const RestaurantProfile = () => {
                         conectar com api de geolocalização
                     </div>
                 </section>
+                <section className="contact">
+                    <h2>Envie-nos um feedback</h2>
+                    <form className="form w-full">
+                        <Input type={"text"} name={"username"} id={"username"} placeholder={"Nome de usuário"} icone={"fa-regular fa-user"} />
+                        
+                        <Input type={"email"} name={"email"} id={"email"} placeholder={"Email"} icone={"fa-solid fa-envelope"} />
+
+                        <TextArea name={'comentario'} id={'comentario'} placeholder={'Insira aqui o seu comentário'} className="msg"/>
+
+                        <Submit value={'Enviar'} name={'comentar'} id={'comentar'}/>
+                    </form>
+                </section>
                 <section className="social-media">
                     <div className="redes">
                         <span><a href=""><i className="fa-brands fa-whatsapp"></i></a></span>

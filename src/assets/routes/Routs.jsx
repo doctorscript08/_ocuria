@@ -6,6 +6,8 @@ import ResgisterRestaurants from "../../pages/Restaurants/Register/Index.jsx";
 import NextStep from "../../pages/Restaurants/Register/NextStep.jsx";
 import RestaurantProfile from "../../pages/Restaurants/Profile/Index.jsx";
 import ClientProfile from "../../pages/Client/Profile/Index.jsx";
+import Personal from "../../pages/Client/Details/PersonalDetails/PersonalDetails.jsx";
+import PersonalInformation from "../../pages/Client/Details/PersonalInformation/PersonalInformation.jsx";
 
 function Routs() {
     return(
@@ -19,6 +21,8 @@ function Routs() {
                     <Route path="/next" element={<NextStep/>}/>
                     <Route path="/restaurant-profile" element={<RestaurantProfile/>}/>
                     <Route path="/client-profile" element={<ClientProfile/>}/>
+                    <Route path="/personal-details" element={<Personal/>}/>
+                    <Route path="/personal-information" element={<PersonalInformation/>}/>
                 </Routes>
             </BrowserRouter>
         </>
