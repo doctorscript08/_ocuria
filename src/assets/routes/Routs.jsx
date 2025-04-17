@@ -18,7 +18,7 @@ function Routs() {
                     <Route path="/login" element={<Login/>}/>
                     <Route path="/register-clients" element={<RegisterClients/>}/>
                     <Route path="/register-restaurants" element={<ResgisterRestaurants/>}/>
-                    <Route path="/next" element={<NextStep/>}/>
+                    <Route path="/register-restaurants-finaly" element={<NextStep/>}/>
                     <Route path="/restaurant-profile" element={<RestaurantProfile/>}/>
                     <Route path="/client-profile" element={<ClientProfile/>}/>
                     <Route path="/personal-details" element={<Personal/>}/>

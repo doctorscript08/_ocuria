@@ -6,13 +6,14 @@ import './famousRestaurants.css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/effect-coverflow'
+import "../../../index.css"
 
 export default () => {
   const prevRef = useRef(null)
   const nextRef = useRef(null)
 
   return (
-    <div className="box-slide">
+    <div className="box-slide w_f">
       <button ref={prevRef} className='slide-btn prevRef'>
         <i class="fa-solid fa-arrow-left"></i>
       </button>

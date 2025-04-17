@@ -3,6 +3,7 @@ import { FreeMode, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "./testemonials.css"
+import "../../../index.css"
 
 export default ({foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9}) => {
   return (
@@ -37,9 +38,9 @@ export default ({foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9})
         className='swiper-free'
       >
         <SwiperSlide className='free-slide'>
-            <div className="comentario">
+            <div className="comentario d_flex">
                 <div className="foto">
-                    <img src={foto1} alt="foto do usuario" />
+                    <img src={foto1} alt="foto do usuario" className='w_f'/>
                 </div>
                 <div className="textos">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, similique alias</p>
@@ -48,9 +49,9 @@ export default ({foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9})
             </div>
         </SwiperSlide>
         <SwiperSlide className='free-slide'>
-            <div className="comentario">
+            <div className="comentario d_flex">
                 <div className="foto">
-                    <img src={foto1} alt="foto do usuario" />
+                    <img src={foto1} alt="foto do usuario" className='w_f'/>
                 </div>
                 <div className="textos">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, similique alias</p>
@@ -59,9 +60,9 @@ export default ({foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9})
             </div>
         </SwiperSlide>
         <SwiperSlide className='free-slide'>
-            <div className="comentario">
+            <div className="comentario d_flex">
                 <div className="foto">
-                    <img src={foto1} alt="foto do usuario" />
+                    <img src={foto1} alt="foto do usuario" className='w_f'/>
                 </div>
                 <div className="textos">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, similique alias</p>

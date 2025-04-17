@@ -1,7 +1,6 @@
-@import url('../../../index.css');
+@charset "UTF-8";
 
 .genero {
-  width: 100%;
   margin: 10px 0px;
   letter-spacing: 1px;
 }

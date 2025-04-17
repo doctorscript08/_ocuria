@@ -1,13 +1,6 @@
 @charset "UTF-8";
 
-.content {
-    width: 100%;
-    padding: 15px;
-}
-
 .content h1 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.5em;
+    font-family: var(--font-nunito);
     margin-bottom: 10px;
 }

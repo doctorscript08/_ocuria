@@ -3,10 +3,11 @@ import { FreeMode, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "./restaurantsCategories.css"
+import "../../../index.css"
 
 export default ({foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9}) => {
   return (
-    <div className="box-slide">
+    <div className="box-slide w_f">
       <Swiper
         modules={[FreeMode, Autoplay]}
         autoplay={{ delay: 2000 }}

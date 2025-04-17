@@ -1,3 +1,5 @@
+import "../../index.css"
+
 function Submit({value, name, id}) {
     return (
         <>

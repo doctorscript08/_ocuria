@@ -3,6 +3,7 @@ import { FreeMode, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "./menuCard.css"
+import "../../../index.css"
 
 export default ({foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9}) => {
   return (
@@ -37,8 +38,8 @@ export default ({foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9})
         className='swiper-free'
       >
         <SwiperSlide className='free-slide'>
-            <div className="card">
-                <img src={foto1} alt="capa de um menu" />
+            <div className="card d_flex">
+                <img src={foto1} alt="capa de um menu" className='w_f'/>
                 <span className="nome-menu">Nome do Menu</span>
                 <span className='descricao'>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -48,8 +49,8 @@ export default ({foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9})
             </div>
         </SwiperSlide>
         <SwiperSlide className='free-slide'>
-            <div className="card">
-                <img src={foto1} alt="capa de um menu" />
+            <div className="card d_flex">
+                <img src={foto1} alt="capa de um menu" className='w_f'/>
                 <span className="nome-menu">Nome do Menu</span>
                 <span className='descricao'>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -59,8 +60,8 @@ export default ({foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9})
             </div>
         </SwiperSlide>
         <SwiperSlide className='free-slide'>
-            <div className="card">
-                <img src={foto1} alt="capa de um menu" />
+            <div className="card d_flex">
+                <img src={foto1} alt="capa de um menu" className='w_f'/>
                 <span className="nome-menu">Nome do Menu</span>
                 <span className='descricao'>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -70,8 +71,8 @@ export default ({foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9})
             </div>
         </SwiperSlide>
         <SwiperSlide className='free-slide'>
-            <div className="card">
-                <img src={foto1} alt="capa de um menu" />
+            <div className="card d_flex">
+                <img src={foto1} alt="capa de um menu" className='w_f'/>
                 <span className="nome-menu">Nome do Menu</span>
                 <span className='descricao'>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -81,8 +82,8 @@ export default ({foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9})
             </div>
         </SwiperSlide>
         <SwiperSlide className='free-slide'>
-            <div className="card">
-                <img src={foto1} alt="capa de um menu" />
+            <div className="card d_flex">
+                <img src={foto1} alt="capa de um menu" className='w_f'/>
                 <span className="nome-menu">Nome do Menu</span>
                 <span className='descricao'>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -92,8 +93,8 @@ export default ({foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9})
             </div>
         </SwiperSlide>
         <SwiperSlide className='free-slide'>
-            <div className="card">
-                <img src={foto1} alt="capa de um menu" />
+            <div className="card d_flex">
+                <img src={foto1} alt="capa de um menu" className='w_f'/>
                 <span className="nome-menu">Nome do Menu</span>
                 <span className='descricao'>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -103,8 +104,8 @@ export default ({foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9})
             </div>
         </SwiperSlide>
         <SwiperSlide className='free-slide'>
-            <div className="card">
-                <img src={foto1} alt="capa de um menu" />
+            <div className="card d_flex">
+                <img src={foto1} alt="capa de um menu" className='w_f'/>
                 <span className="nome-menu">Nome do Menu</span>
                 <span className='descricao'>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -114,8 +115,8 @@ export default ({foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9})
             </div>
         </SwiperSlide>
         <SwiperSlide className='free-slide'>
-            <div className="card">
-                <img src={foto1} alt="capa de um menu" />
+            <div className="card d_flex">
+                <img src={foto1} alt="capa de um menu" className='w_f'/>
                 <span className="nome-menu">Nome do Menu</span>
                 <span className='descricao'>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -125,8 +126,8 @@ export default ({foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9})
             </div>
         </SwiperSlide>
         <SwiperSlide className='free-slide'>
-            <div className="card">
-                <img src={foto1} alt="capa de um menu" />
+            <div className="card d_flex">
+                <img src={foto1} alt="capa de um menu" className='w_f'/>
                 <span className="nome-menu">Nome do Menu</span>
                 <span className='descricao'>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.

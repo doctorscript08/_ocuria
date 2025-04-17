@@ -1,12 +1,13 @@
 import Input from "../../../components/Input/Input.jsx"
 import "./resgisterRestaurants.css"
+import "../../../index.css"
 
 
 function ResgisterRestaurants() {
     return (
         <>
-            <main className="body">
-                <section className="conteiner bg-white text-center p-4">
+            <main className="body_form">
+                <section className="conteiner_form bg-white text-center p-4">
                     <h1 className="text-black font-extrabold text-3xl uppercase">Cadastrar Restaurante</h1>
                     <p className="font-semibold">Já tem um? <span><a href="/login">Login</a></span></p>
                     <form className="form">
@@ -25,7 +26,7 @@ function ResgisterRestaurants() {
                         <Input type={"text"} name={"telefone"} id={"telefone"} placeholder={"Contacto do restaurante"} icone={"fa-solid fa-phone"} />
                         <Input type={"password"} name={"password"} id={"password"} placeholder={"Password"} icone={"fa-solid fa-lock"} />
                         <Input type={"password"} name={"password_confirm"} id={"password_confirm"} placeholder={"Confirmar Password"} icone={"fa-solid fa-lock"} />
-                        <a href="/next" className="btn btn-sec">Seguinte</a>
+                        <a href="/register-restaurants-finaly" className="btn btn-sec">Seguinte</a>
                     </form>
                 </section>
             </main>

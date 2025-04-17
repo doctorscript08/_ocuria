@@ -1,7 +1,6 @@
 @import url('../../index.css');
 
 .input-user {
-    width: 100%;
     color: var(--preto);
     font-weight: 600;
     margin: 5px;

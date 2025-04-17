@@ -1,19 +1,20 @@
 import Input from "../../../components/Input/Input.jsx"
 import Submit from "../../../components/Submit/Submit.jsx"
 import "./registerClients.css"
+import "../../../index.css"
 
 function RegisterClients() {
     return (
         <>
-            <main className="body">
-                <section className="conteiner bg-white text-center">
+            <main className="body_form">
+                <section className="conteiner_form bg-white text-center">
                     <h1 className="text-black font-extrabold text-3xl uppercase">Criar Conta</h1>
                     <p className="font-semibold">Já tem uma conta? <span><a href="/login">Login</a></span></p>
 
                     <form className="form">
                         <Input type={"text"} name={"username"} id={"username"} placeholder={"Nome de usuário"} icone={"fa-regular fa-user"} />
 
-                        <div className="genero">
+                        <div className="genero w_f">
                             <p className="text-xl genero-text">Género</p>      
                             <section>
                                 <input type="radio" name="genero" id="masculino" /> &nbsp;

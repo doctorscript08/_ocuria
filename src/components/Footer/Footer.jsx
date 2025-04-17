@@ -1,12 +1,13 @@
 import React from 'react';
-import './Footer.css'; 
 import { Link } from 'react-router-dom';
+import './footer.css';
+import '../../index.css'
 
 const Footer = () => {
 
   return (
 
-    <footer className="footer">
+    <footer className="footer p_15">
 
       <div className="footer-links">
 
@@ -19,7 +20,7 @@ const Footer = () => {
 
       </div>
 
-      <div className="footer-text">
+      <div className="footer-text d_flex">
 
         <p>Ocuria Menu</p>, 
 

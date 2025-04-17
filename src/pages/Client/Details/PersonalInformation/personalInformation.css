@@ -1,1 +1,5 @@
 @charset "UTF-8";
+
+.information h1 {
+    font-family: var(--font-nunito);
+}

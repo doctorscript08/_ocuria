@@ -1,12 +1,12 @@
 import Input from "../../components/Input/Input.jsx"
 import Submit from "../../components/Submit/Submit.jsx"
-import "./login.css"
+import "../../index.css"
 
 function Login() {
     return (
         <>
-            <main className="body">
-                <section className="conteiner bg-white text-center p-4">
+            <main className="body_form">
+                <section className="conteiner_form bg-white text-center p-4">
                     <h1 className="text-black font-extrabold uppercase">Login</h1>
                     <p className="font-semibold">
                         Não tem uma conta? <span><a href="/register-clients">Cadastrar</a></span>

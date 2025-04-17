@@ -1,28 +1,18 @@
 @charset "UTF-8";
 
-.identificate {
-    width: 100%;
+.identification_client {
     height: 150px;
-    padding: 15px;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
 
-.photo {
+.profile_photo_client {
     width: 100px;
     height: 100px;
 }
 
-.photo img {
-    width: 100%;
-    height: 100%;
+.profile_photo_client img {
     border-radius: 50%;
-}
-
-.operations {
-    width: 100%;
-    padding: 15px;
 }

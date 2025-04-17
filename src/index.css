@@ -12,10 +12,10 @@
   --cinza-medio: #9E9E9E;
   --preto: #000000;
 
-  --font-titulos: 'Pacifico', cursive;
-  --font-subtitulos: 'Poppins', sans-serif;
-  --font-texto: 'Nunito', sans-serif;
-  --font-special: 'Caveat', cursive;
+  --font-pacifico: 'Pacifico', cursive;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-nunito: 'Nunito', sans-serif;
+  --font-caveat: 'Caveat', cursive;
 }
 
 /* GERAL */
@@ -27,15 +27,52 @@
   font-size: 100%;
   box-sizing: border-box;
   outline: none;
-  font: 700 1em var(--font-texto);
+  font: 700 1em var(--font-poppins);
+}
+
+h1 {
+  font-family: var(--font-pacifico);
+  font-size: 1.75em;
+}
+
+h2, h3 {
+  font-family: var(--font-nunito);
+  font-size: 1.5em;
 }
 
 p {
+  font-family: var(--font-poppins);
+  font-weight: normal;
+  font-size: 1em;
   text-align: justify;
 }
 
 a {
   text-decoration: none;
+}
+
+.w_f {
+  width: 100%;
+}
+
+.d_flex {
+  display: flex;
+}
+
+.p_15 {
+  padding: 15px;
+}
+
+.text_c {
+  text-align: center;
+}
+
+.text_up {
+  text-transform: uppercase;
+}
+
+.transition {
+  transition: all .5s ease-out;
 }
 
 /* BOTÕES */
@@ -69,7 +106,7 @@ a {
 
 /* FORMS */
 
-.body {
+.body_form {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -77,7 +114,7 @@ a {
   align-items: center;
 }
 
-.conteiner {
+.conteiner_form {
   width: 100%;
   min-width: 320px;
   max-width: 600px;
@@ -87,13 +124,17 @@ a {
   box-shadow: 1px 1px 5px var(--cinza-medio);
 }
 
-.conteiner h1 {
-  text-align: center;
-  font-size: 2em;
+.conteiner_form h1 {
+  font-family: var(--font-texto);
 }
 
-.conteiner p {
+.conteiner_form p {
   text-align: center;
+}
+
+.conteiner_form p > span {
+  color: var(--laranja);
+  text-decoration: underline;
 }
 
 .form {
@@ -102,7 +143,38 @@ a {
   align-items: center;
 }
 
-p > span {
-  color: var(--laranja);
-  text-decoration: underline;
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+      font-size: 1.125em;
+  }
+
+  h1 {
+      font-size: 2.25em;
+  }
+
+  h2, h3 {
+      font-size: 2em;
+  }
+
+  p {
+      font-size: 1.125em;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  body {
+      font-size: 1.25em;
+  }
+
+  h1 {
+      font-size: 3em;
+  }
+
+  h2, h3 {
+      font-size: 2.5em;
+  }
+
+  p {
+      font-size: 1.25em;
+  }
 }
