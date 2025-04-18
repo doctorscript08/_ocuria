@@ -1,9 +1,12 @@
 import Input from "../../../components/Input/Input.jsx"
 import "./resgisterRestaurants.css"
 import "../../../index.css"
+import { useState } from "react"
 
 
 function ResgisterRestaurants() {
+    const [showPassword, setShowPassword] = useState(false)
+
     return (
         <>
             <main className="body_form">
@@ -23,9 +26,17 @@ function ResgisterRestaurants() {
                             </select>
                         </div>
                         <Input type={"email"} name={"email"} id={"email"} placeholder={"Email do restaurante"} icone={"fa-solid fa-envelope"} />
+
                         <Input type={"text"} name={"telefone"} id={"telefone"} placeholder={"Contacto do restaurante"} icone={"fa-solid fa-phone"} />
-                        <Input type={"password"} name={"password"} id={"password"} placeholder={"Password"} icone={"fa-solid fa-lock"} />
-                        <Input type={"password"} name={"password_confirm"} id={"password_confirm"} placeholder={"Confirmar Password"} icone={"fa-solid fa-lock"} />
+
+                        <Input type={showPassword ? 'text' : 'password'} name={"password"} id={"password"} placeholder={"Password"} icone={"fa-solid fa-lock"} />
+
+                        <Input type={showPassword ? 'text' : 'password'} name={"password_confirm"} id={"password_confirm"} placeholder={"Confirmar Password"} icone={"fa-solid fa-lock"} />
+
+                        <div className="show_password">
+                            <input type="checkbox" name="show_password" id="show_password" onInput={() => setShowPassword(!showPassword)}/>
+                            <label htmlFor="show_password">Mostrar password</label>
+                        </div>
                         <a href="/register-restaurants-finaly" className="btn btn-sec">Seguinte</a>
                     </form>
                 </section>

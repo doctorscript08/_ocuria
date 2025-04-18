@@ -3,3 +3,7 @@
 .information h1 {
     font-family: var(--font-nunito);
 }
+
+.information div {
+    justify-content: center;
+}

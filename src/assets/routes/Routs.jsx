@@ -8,6 +8,8 @@ import RestaurantProfile from "../../pages/Restaurants/Profile/Index.jsx";
 import ClientProfile from "../../pages/Client/Profile/Index.jsx";
 import Personal from "../../pages/Client/Details/PersonalDetails/PersonalDetails.jsx";
 import PersonalInformation from "../../pages/Client/Details/PersonalInformation/PersonalInformation.jsx";
+import PhoneNumber from "../../pages/Client/Details/PhoneNumber/PhoneNumber.jsx";
+import Password from "../../pages/Client/Details/Password/Password.jsx";
 
 function Routs() {
     return(
@@ -23,6 +25,8 @@ function Routs() {
                     <Route path="/client-profile" element={<ClientProfile/>}/>
                     <Route path="/personal-details" element={<Personal/>}/>
                     <Route path="/personal-information" element={<PersonalInformation/>}/>
+                    <Route path="/change-phone-number" element={<PhoneNumber/>}/>
+                    <Route path="/change-password" element={<Password/>}/>
                 </Routes>
             </BrowserRouter>
         </>

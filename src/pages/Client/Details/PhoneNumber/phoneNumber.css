@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.corpo div {
+    justify-content: center;
+}
+
+section h1 {
+    font-family: var(--font-nunito);   
+}
