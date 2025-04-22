@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+.corpo {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.item {
+    width: 90%;
+    margin: auto auto 15px auto;
+    border-radius: 18px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--cinza-claro);
+}
+
+.info {
+    width: 90%;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.order_name {
+    font-size: 1em;
+    margin-bottom: 0px;
+}
+
+.price_quantity span {
+    margin-right: 10px;
+}
+
+.price_actions {
+    justify-content: space-between;
+}
+
+.price {
+    width: 50%;
+    text-align: start;
+}
+
+.order_actions {
+    width: 50%;
+    text-align: end;
+}
+
+.order_actions span {
+    cursor: pointer;
+    margin-left: 10px;
+}

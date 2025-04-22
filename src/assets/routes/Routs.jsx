@@ -10,6 +10,7 @@ import Personal from "../../pages/Client/Details/PersonalDetails/PersonalDetails
 import PersonalInformation from "../../pages/Client/Details/PersonalInformation/PersonalInformation.jsx";
 import PhoneNumber from "../../pages/Client/Details/PhoneNumber/PhoneNumber.jsx";
 import Password from "../../pages/Client/Details/Password/Password.jsx";
+import Cart from "../../pages/Client/Cart/Cart.jsx";
 
 function Routs() {
     return(
@@ -27,6 +28,7 @@ function Routs() {
                     <Route path="/personal-information" element={<PersonalInformation/>}/>
                     <Route path="/change-phone-number" element={<PhoneNumber/>}/>
                     <Route path="/change-password" element={<Password/>}/>
+                    <Route path="/cart" element={<Cart/>}/>
                 </Routes>
             </BrowserRouter>
         </>

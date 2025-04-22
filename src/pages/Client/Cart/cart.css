@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.corpo h1 {
+    font-family: var(--font-nunito);
+}
+
+.cart_details span {
+    margin-right: 20px;
+}
